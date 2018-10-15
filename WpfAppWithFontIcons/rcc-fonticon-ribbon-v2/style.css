@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'rcc-fonticon-ribbon-v2';
+  src:  url('fonts/rcc-fonticon-ribbon-v2.eot?o4yyh6');
+  src:  url('fonts/rcc-fonticon-ribbon-v2.eot?o4yyh6#iefix') format('embedded-opentype'),
+    url('fonts/rcc-fonticon-ribbon-v2.woff2?o4yyh6') format('woff2'),
+    url('fonts/rcc-fonticon-ribbon-v2.ttf?o4yyh6') format('truetype'),
+    url('fonts/rcc-fonticon-ribbon-v2.woff?o4yyh6') format('woff'),
+    url('fonts/rcc-fonticon-ribbon-v2.svg?o4yyh6#rcc-fonticon-ribbon-v2') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="rcc-"], [class*=" rcc-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'rcc-fonticon-ribbon-v2' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rcc-airplane-mode-circ:before {
+  content: "\e900";
+}
+.rcc-als-on:before {
+  content: "\e923";
+}
+.rcc-barcode:before {
+  content: "\e92b";
+}
+.rcc-barcode-scanner-circ:before {
+  content: "\e92c";
+}
+.rcc-bluetooth-inactive:before {
+  content: "\e901";
+}
+.rcc-brightness:before {
+  content: "\e902";
+}
+.rcc-brightness-inactive:before {
+  content: "\e903";
+}
+.rcc-browse-inactive:before {
+  content: "\e904";
+}
+.rcc-camera:before {
+  content: "\e905";
+}
+.rcc-camera-flash-auto-circ:before {
+  content: "\e906";
+}
+.rcc-camera-flash-off-circ:before {
+  content: "\e907";
+}
+.rcc-camera-flash-on-circ:before {
+  content: "\e908";
+}
+.rcc-camera-swap-inactive:before {
+  content: "\e909";
+}
+.rcc-camera_circ:before {
+  content: "\e90a";
+}
+.rcc-cellular-broadband-inactive:before {
+  content: "\e90b";
+}
+.rcc-display-inactive:before {
+  content: "\e90c";
+}
+.rcc-flashlight-inactive:before {
+  content: "\e90d";
+}
+.rcc-fn-lock-inactive:before {
+  content: "\e90e";
+}
+.rcc-gps-inactive:before {
+  content: "\e90f";
+}
+.rcc-keyboard-backlight-inactive:before {
+  content: "\e910";
+}
+.rcc-microphone-inactive:before {
+  content: "\e911";
+}
+.rcc-microphone-mute-inactive:before {
+  content: "\e912";
+}
+.rcc-night-mode-on-inactive:before {
+  content: "\e913";
+}
+.rcc-num-lock-inactive:before {
+  content: "\e914";
+}
+.rcc-on-screen-keyboard-inactive:before {
+  content: "\e915";
+}
+.rcc-open-mobilty-center:before {
+  content: "\e924";
+}
+.rcc-open-rcc-square:before {
+  content: "\e925";
+}
+.rcc-project-screen:before {
+  content: "\e916";
+}
+.rcc-refresh-page:before {
+  content: "\e926";
+}
+.rcc-rotate-display:before {
+  content: "\e927";
+}
+.rcc-rotation-lock-inactive:before {
+  content: "\e917";
+}
+.rcc-rugged-close:before {
+  content: "\e918";
+}
+.rcc-rugged-open:before {
+  content: "\e919";
+}
+.rcc-screen-projector:before {
+  content: "\e91a";
+}
+.rcc-scroll-lock-inactive:before {
+  content: "\e91b";
+}
+.rcc-stealth-mode-on:before {
+  content: "\e928";
+}
+.rcc-touchscreen-on-circ:before {
+  content: "\e91c";
+}
+.rcc-url:before {
+  content: "\e929";
+}
+.rcc-volume-circ:before {
+  content: "\e91d";
+}
+.rcc-volume-high:before {
+  content: "\e91e";
+}
+.rcc-volume-low:before {
+  content: "\e91f";
+}
+.rcc-wi-gig-circ:before {
+  content: "\e920";
+}
+.rcc-windows-setting-common:before {
+  content: "\e92a";
+}
+.rcc-wireless-circ:before {
+  content: "\e921";
+}
+.rcc-wwan-circ:before {
+  content: "\e922";
+}
