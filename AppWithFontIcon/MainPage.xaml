@@ -37,9 +37,9 @@
         <TextBlock Grid.Row="1" Grid.Column="2" Text="{x:Bind local:FontIcons.microphone_inactive}"   Foreground="Orange"  FontSize="96" ></TextBlock>
         <TextBlock Grid.Row="1" Grid.Column="3" Text="{x:Bind local:FontIcons.microphone_mute_inactive}"    Foreground="Brown"  FontSize="{x:Bind DynamicFontSize(),Mode=OneWay,FallbackValue=128}"  ></TextBlock>
 
-        <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Bind local:FontIcons.brightness}"   Foreground="Gray"  FontSize="32" ></TextBlock>
-        <TextBlock Grid.Row="2" Grid.Column="1" Text="{x:Bind local:FontIcons.brightness}"  Foreground="{StaticResource dellBlue}" FontSize="64" ></TextBlock>
-        <TextBlock Grid.Row="2" Grid.Column="2" Text="{x:Bind local:FontIcons.microphone_inactive}"   Foreground="Orange"   FontSize="96" ></TextBlock>
-        <TextBlock Grid.Row="2" Grid.Column="3" Text="{x:Bind local:FontIcons.microphone_mute_inactive}"    Foreground="Brown"  FontSize="{x:Bind DynamicFontSize(),Mode=OneWay,FallbackValue=128}"  ></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Bind local:FontIcons.night_mode_on_inactive}"   Foreground="Gray"  FontSize="32" ></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="{x:Bind local:FontIcons.night_mode_on_inactive}"  Foreground="{StaticResource dellBlue}" FontSize="64" ></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="2" Text="{x:Bind local:FontIcons.wireless_circ}"   Foreground="Orange"   FontSize="96" ></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="3" Text="{x:Bind local:FontIcons.wireless_circ}"    Foreground="Brown"  FontSize="{x:Bind DynamicFontSize(),Mode=OneWay,FallbackValue=128}"  ></TextBlock>
     </Grid>
 </Page>
