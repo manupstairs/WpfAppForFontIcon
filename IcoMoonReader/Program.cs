@@ -7,6 +7,8 @@ using System.IO;
 using System.Xml;
 using System.Xml.Linq;
 using System.Text.RegularExpressions;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace IcoMoonReader
 {
@@ -36,6 +38,27 @@ namespace IcoMoonReader
                         var name = list[0].Replace("\"", "").Replace("-","_");
                         var code = list[1].Replace("&#x", "\\u").Replace(";", "");
                         Console.WriteLine($"public static string {name} {{ get; }} = {code};");
+                    }
+                }
+            }
+            Console.ReadKey();
+        }
+
+        private void ReadSelectionJson()
+        {
+            using (var stream = new FileStream("selection.json", FileMode.Open))
+            {
+                using (var reader = new StreamReader(stream))
+                {
+                    var input = reader.ReadToEnd();
+                    JObject rss = JObject.Parse(input);
+                    var icons = (JArray)rss["icons"];
+                    foreach (var icon in icons)
+                    {
+                        var name = icon["properties"]["name"].ToString().Replace("-","_");
+                        var code = icon["properties"]["code"];
+                        var hexCode = $"\"\\u{code.Value<int>().ToString("X4")}\"";
+                        Console.WriteLine($"public static string {name} {{ get; }} = {hexCode};");
                     }
                 }
             }
