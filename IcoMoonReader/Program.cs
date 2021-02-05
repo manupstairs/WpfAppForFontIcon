@@ -16,7 +16,7 @@ namespace IcoMoonReader
     {
         static void Main(string[] args)
         {
-            new Program().ReadSvgFile();
+            new Program().ReadSelectionJson();
         }
 
         private void ReadSvgFile()
@@ -57,7 +57,7 @@ namespace IcoMoonReader
                     {
                         var name = icon["properties"]["name"].ToString().Replace("-","_");
                         var code = icon["properties"]["code"];
-                        var hexCode = $"\"\\u{code.Value<int>().ToString("X4")}\"";
+                        var hexCode = $"\"\\u{code.Value<int>().ToString("x4")}\"";
                         Console.WriteLine($"public static string {name} {{ get; }} = {hexCode};");
                     }
                 }
