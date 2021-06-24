@@ -21,7 +21,7 @@ namespace IcoMoonReader
 
         private void ReadSvgFile()
         {
-            using (var stream = new FileStream("rcc-fonticon-ribbon-v2.svg", FileMode.Open))
+            using (var stream = new FileStream("rcc4-icon.svg", FileMode.Open))
             {
                 using (var reader = new StreamReader(stream))
                 {
@@ -53,9 +53,9 @@ namespace IcoMoonReader
                     var input = reader.ReadToEnd();
                     JObject rss = JObject.Parse(input);
                     var icons = (JArray)rss["icons"];
-                    foreach (var icon in icons)
+                    foreach (var icon in icons.OrderBy(i=>i["properties"]["name"].ToString()))
                     {
-                        var name = icon["properties"]["name"].ToString().Replace("-","_");
+                        var name = icon["properties"]["name"].ToString().Replace("-", "_").Replace("_icon","");
                         var code = icon["properties"]["code"];
                         var hexCode = $"\"\\u{code.Value<int>().ToString("x4")}\"";
                         Console.WriteLine($"public static string {name} {{ get; }} = {hexCode};");
